@@ -1,0 +1,45 @@
+{
+  "name": "👾 Miduconf MCP Server Demo 🔴",
+  // "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
+  "dockerComposeFile": "compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest",
+      "tflint": "latest",
+      "terragrunt": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-json",
+        "hashicorp.terraform",
+        "ms-vscode.remote-repositories",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "bradlc.vscode-tailwindcss",
+        "ms-python.python",
+        "ms-dotnettools.vscode-dotnet-runtime"
+      ],
+      "settings": {
+        "typescript.preferences.importModuleSpecifier": "relative",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "explicit"
+        },
+        "files.eol": "\n",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "npm install && npm run build"
+  // "forwardPorts": [6274, 6277]
+}

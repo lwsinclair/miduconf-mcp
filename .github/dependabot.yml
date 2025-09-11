@@ -1,0 +1,42 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    open-pull-requests-limit: 10
+    groups:
+      runtime-deps:
+        patterns:
+          - "@modelcontextprotocol/*"
+          - "express"
+          - "googleapis"
+          - "dotenv"
+      typescript-stack:
+        patterns:
+          - "typescript"
+          - "@types/*"
+          - "tsx"
+      validation-lib:
+        patterns:
+          - "zod"
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "express"
+        update-types: ["version-update:semver-major"]
+    labels:
+      - "dependencies"
+      - "automated"
+    reviewers:
+      - "0GiS0"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+  - package-ecosystem: "github-actions"
+    directory: "/"   
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "ci"
+    commit-message:
+      prefix: "deps"
+      include: "scope"

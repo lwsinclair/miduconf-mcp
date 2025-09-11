@@ -1,0 +1,16 @@
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
+
+  # inspector:
+  #   image: ghcr.io/modelcontextprotocol/inspector:latest
+  #   environment:
+  #     - DANGEROUSLY_OMIT_AUTH=true
+  #     - MCP_AUTO_OPEN_ENABLED=false
+  #     - HOST=0.0.0.0
+  #   ports:
+  #     - 6274:6274
+  #     - 6277:6277

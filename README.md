@@ -11,6 +11,10 @@
 
 ¡Hola developer 👋🏻! En este repo encontrarás todas las demos que mostré durante mi charla en la [Miduconf 2025](https://www.miduconf.com/) sobre la programación de tus MCPs (Model Context Protocol).
 
+ <a href="https://www.youtube.com/watch?v=NldH5eojZPc">
+     <img src="https://img.youtube.com/vi/NldH5eojZPc/maxresdefault.jpg" alt="Cap.1 - Intro y setup" width="100%" />
+ </a>
+
 ## 🤖 ¿Qué es MCP?
 
 MCP (Model Context Protocol) es un estándar abierto para la comunicación entre modelos de lenguaje y herramientas externas. Permite a los modelos interactuar con APIs, bases de datos y otros servicios de manera estructurada y segura. Pero para que lo veas claro, imagina que quieres poder pedirle a un modelo de IA que busque vídeos en YouTube, playlists, canales, o incluso, por qué no, genere títulos para tus vídeos... si bien es cierto que los modelos de lenguaje pueden generar texto, no tienen acceso directo a internet ni a APIs externas. Aquí es donde entra MCP, permitiendo que el modelo "pida" información a través de herramientas específicas. Para que lo veas claro, te lo dejo en formato comic:

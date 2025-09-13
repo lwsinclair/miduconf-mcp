@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/0gis0-miduconf-mcp-badge.png)](https://mseep.ai/app/0gis0-miduconf-mcp)
+
 # 🚀 Mi demos de la Miduconf 2025: Programando tus MCPs
 
 <div align="center">
